@@ -11,9 +11,56 @@ from collections import defaultdict
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+from datetime import date
+import dateutil.parser as dp
 
-df = pd.read_csv("ODI-2018.csv")
+def calculate_age(born):
+    today = date.today()
+    return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
 
+
+root = 'D:\Cursuri Master\DMT'
+
+df = pd.read_csv(os.path.join(root,"ODI-2018.csv"))
+print(len(df))
+print(len(df.columns))
+
+date_slash = 0
+date_hyphen = 0 
+date_point = 0
+
+agedict = defaultdict(int)
+for i in range(0,len(df)):
+    dateb = str(df['When is your birthday (date)?'][i])
+    if '-' in dateb:
+        date_hyphen += 1
+    if '/' in dateb:
+        date_slash += 1
+    if '.' in dateb:
+        date_point += 1
+    try:
+        age = calculate_age(dp.parse(dateb))
+        if age in agedict:
+                agedict[age] += 1
+        else:
+                agedict[age] = 1
+    except ValueError:
+        pass
+agedict.pop(0,None)
+agedict.pop(-1,None)
+agedict.pop(86,None)
+agedict.pop(250,None)
+keys = agedict.keys()
+values = agedict.values()
+plt.bar(keys,values)
+plt.xticks(keys)
+plt.xlabel('Age')
+plt.ylabel('Number of people')
+plt.legend()
+plt.show()
+    
+print(date_slash,date_hyphen,date_point)
 non_decimal = re.compile(r'[^\d.]+')
 for i in range(0,len(df)):
     df['Time you went to be Yesterday'][i] = str(df['Time you went to be Yesterday'][i]).replace(":",".")
@@ -89,7 +136,6 @@ nr_people = [475, 79, 75, 36, 22]
 plt.bar(y_pos, nr_people, align='center', alpha=0.5, color = ['seagreen','firebrick', 'gold','gray','saddlebrown' ])
 plt.xticks(y_pos, objects)
 plt.ylabel('Number of answers')
-plt.title('What makes people happy?')
 plt.show()
 
 sleep_late = 0
