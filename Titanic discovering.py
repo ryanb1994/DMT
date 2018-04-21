@@ -89,8 +89,8 @@ df_train = df_train.drop(['Name', 'PassengerId', 'Survived'], axis = 1)
 df_testpss = df_test['PassengerId']
 df_test = df_test.drop(['Name', 'PassengerId'], axis = 1)
 
-df_train = df_train.drop(['Embarked_0', 'Pclass_3','Alone', 'Parent','Fare', 'Ticket', 'SibSp', 'Parch'], axis = 1)
-df_test = df_test.drop(['Embarked_0', 'Pclass_3', 'Alone', 'Fare', 'Parent', 'Ticket','SibSp', 'Parch'], axis = 1)
+df_train = df_train.drop(['Embarked_0', 'Pclass_3','Alone', 'Parent', 'Ticket', 'SibSp', 'Parch'], axis = 1)
+df_test = df_test.drop(['Embarked_0', 'Pclass_3', 'Alone', 'Parent', 'Ticket','SibSp', 'Parch'], axis = 1)
 
 # !!Combine all dataframes into one for last model ?
 
