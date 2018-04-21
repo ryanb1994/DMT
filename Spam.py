@@ -29,41 +29,8 @@ df_words = pd.DataFrame(Xtraincounts.todense(), columns=cvt.get_feature_names())
 
 # Iterate over columns df_words, check sum, and delete any column if sum is under 250?
 
-
-
-
-
-
 # Create train and test set
 print(data.head())
 print(df_words.head())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Am at this moment creating other dataframe of all those words to work in, around 9474 different words now :p.
