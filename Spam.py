@@ -28,7 +28,10 @@ df = pd.concat([data, df_words], axis=1)
 print (df.shape)
 df.drop([col for col,val in df.sum().iteritems() if val < 15], axis=1, inplace=True)
 print (df.shape)
-# df.to_csv('Spammessagesandinstances.csv')
+df.Spam = df.Spam.shift(-1)
+df.Message = df.Message.shift(-1)
+print (df.head())
+
 # Check for the connection of spam
 # Like if spam = 1 and column = 1 then connection = 1, and train classifiers on these connections
-# This is apparently compute intensive so you could continue with this csv
+# This is apparently compute intensive so you could continue with the csv spammessagesandinstances
