@@ -72,8 +72,8 @@ df_train = df_train.drop(['Name', 'PassengerId', 'Survived'], axis = 1)
 df_testpss = df_test['PassengerId']
 df_test = df_test.drop(['Name', 'PassengerId'], axis = 1)
 
-df_train = df_train.drop(['Age', 'Parent', 'Fare', 'Ticket', 'SibSp', 'Parch'], axis = 1)
-df_test = df_test.drop(['Age', 'Parent', 'Fare', 'Ticket','SibSp', 'Parch'], axis = 1)
+df_train = df_train.drop(['Age', 'Fare', 'Ticket', 'SibSp', 'Parch'], axis = 1)
+df_test = df_test.drop(['Age', 'Fare', 'Ticket','SibSp', 'Parch'], axis = 1)
 
 # Logistic Regression
 lr = LogisticRegression()
