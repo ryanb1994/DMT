@@ -48,11 +48,11 @@ df_train['Age'] = df_train.Age.fillna(round(df_train['Age'].median(), 2))
 df_test['Age'] = df_test.Age.fillna(round(df_test['Age'].median(), 2))
 
 # Age under 12
-df_train['U12'] = np.where(df_train['Age'] <= 12, 1, 0)
-df_test['U12'] = np.where(df_test['Age'] <= 12, 1, 0)
+df_train['U12'] = np.where(df_train['Age'] < 12, 1, 0)
+df_test['U12'] = np.where(df_test['Age'] < 12, 1, 0)
 # Age above 12
-df_train['A12'] = np.where(df_train['Age'] > 12, 1, 0)
-df_test['A12'] = np.where(df_test['Age'] > 12, 1, 0)
+df_train['A12'] = np.where(df_train['Age'] >= 12, 1, 0)
+df_test['A12'] = np.where(df_test['Age'] >= 12, 1, 0)
 
 # Family Members
 df_train['Family members'] = df_train['SibSp'] + df_train['Parch']
