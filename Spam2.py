@@ -35,25 +35,3 @@ decision_tree = DecisionTreeClassifier()
 decision_tree.fit(X_train, y_train)
 ydt = decision_tree.predict(X_test)
 print (accuracy_score(ydt,y_test))
-# acc_decision_tree = round(decision_tree.score(X_train, y_train) * 100, 2)
-# print (acc_decision_tree)
-
-
-# Logistic Regression
-lr = LogisticRegression()
-lr.fit(X_train, X_test)
-y_pred = lr.predict(y_test)
-acc_log = round(lr.score(X_train, y_test)*100, 2)
-print (acc_log)
-
-coeff_df = pd.DataFrame(df_train.columns)
-coeff_df.columns = ['Feature']
-coeff_df['Correlation'] = pd.Series(lr.coef_[0])
-coeff_df.sort_values('Correlation', ascending=False)
-print (coeff_df)
-
-
-
-
-
-print (data.head(10))
