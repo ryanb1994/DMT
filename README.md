@@ -1,7 +1,3 @@
 # DMT
 
-
-Overleaf link
-https://www.overleaf.com/15495543htsynywmnktn#/58792266/
-
-
+Overview of the code and data used for the Basic Assignment of Data Mining Techniques @ VU 2018
