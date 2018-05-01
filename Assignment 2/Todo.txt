@@ -9,6 +9,10 @@ Start with data exploration
 Exploration similar outcomes
 
 
+Unique amount of visistors.
+When no NULL lines
+amount of countries
+
 
 
 
