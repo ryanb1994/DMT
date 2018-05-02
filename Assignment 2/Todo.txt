@@ -13,9 +13,11 @@ Unique amount of visistors.
 When no NULL lines
 amount of countries
 
+-------------------------------------------------------------
+Ryan:
 
-
-
+- Calculating the number of unique users
+-------------------------------------------------------------
 
 
 
