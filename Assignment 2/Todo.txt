@@ -17,7 +17,7 @@ amount of countries
 Ryan:
 
 - Calculating the number of unique users.
-- Calculating the number of booking when competitions has no available hotels or price is higher.
+- Calculating the number of booking when competitors has no available hotels or price is higher then competitors.
 
 Site I use for 3.1 (Business understanding):
 
