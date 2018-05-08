@@ -3,7 +3,7 @@ import time
 
 start = time.time()
 
-with open('training.csv', 'r') as csvfile:
+with open('testset.csv', 'r') as csvfile:
 	f = csv.reader(csvfile)
 	skip = next(f)
 
@@ -20,4 +20,4 @@ with open('training.csv', 'r') as csvfile:
 
 end = time.time()
 
-print end - start
+print (end - start)
