@@ -9,9 +9,28 @@ Start with data exploration
 Exploration similar outcomes
 
 
+Unique amount of visistors.
+When no NULL lines
+amount of countries
 
+-------------------------------------------------------------
+Ryan:
 
+<<<<<<< HEAD
 Price should be important. Number of stars. Countryof where property located.
+=======
+- Calculating the number of unique users.
+- Calculating the number of booking when competitors has no available hotels or price is higher than competitors.
+- Calculating the number of bookings AND clicks by promotions.
+
+(MORE ARE COMING)
+
+Site I use for 3.1 (Business understanding):
+
+http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=08C03F09F57DE9399581C2C0E54CE589?doi=10.1.1.1019.4846&rep=rep1&type=pdf
+-------------------------------------------------------------
+
+>>>>>>> 9f14171ece60ae47f4837f1391d567ea993a3ad0
 
 
 
