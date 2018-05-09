@@ -37,15 +37,11 @@ https://kaggle2.blob.core.windows.net/competitions/kaggle/3504/media/ICDM2013_Pr
 >>>>>>> 9f14171ece60ae47f4837f1391d567ea993a3ad0
 
 Things that could be important for deciding:
--Price 
+-Price -> we have to check for specific dates, since it is more expensive in the summer.
 -Number of stars
 -Country where property is located
 -Children
 -Promotion flag
-
-
-
-
 
 
 
