@@ -1,18 +1,16 @@
 
+TASKS
+-------------------------------------------------------------
+-Set up the skeleton of the document - done, sent you an email
 
-Set up the skeleton of the document - done, sent you an email
+-Business understanding
 
-Business understanding
+-Start with data exploration
 
-Start with data exploration
-
-Exploration similar outcomes
+-Exploration similar outcomes
 
 
-Unique amount of visistors.
-When no NULL lines
-amount of countries
-
+EDA
 -------------------------------------------------------------
 Ryan:
 
@@ -25,6 +23,19 @@ Ryan:
 
 (MORE ARE COMING)
 
+Maria:
+
+-Number of unique searches: 199,795
+-Number of countries: 172
+-Number of hotels: 129,113
+-Total nr clicks/Promotion flag clicks: 221,879 / 64,469
+-Total nr bookings/Promotion flag bookings 138,390 / 41,947
+-Total nr promotion flags: 1,069,118
+
+
+RELATED WORK
+---------------------------------------------------------------
+
 Site I use for 3.1 (Business understanding):
 
 http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=08C03F09F57DE9399581C2C0E54CE589?doi=10.1.1.1019.4846&rep=rep1&type=pdf
@@ -32,11 +43,14 @@ http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=08C03F09F57DE9399581C2C0
 Presentations of winners:
 
 https://kaggle2.blob.core.windows.net/competitions/kaggle/3504/media/ICDM2013_Presentations_2013-12-08.zip
--------------------------------------------------------------
+---------------------------------------------------------------
 
 >>>>>>> 9f14171ece60ae47f4837f1391d567ea993a3ad0
 
-Things that could be important for deciding:
+
+
+POSSIBLE FEATURES (Things that could be important for deciding)
+---------------------------------------------------------------
 -Price -> we have to check for specific dates, since it is more expensive in the summer.
 -Number of stars
 -Country where property is located
