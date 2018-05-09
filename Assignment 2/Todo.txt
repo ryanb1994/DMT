@@ -17,9 +17,7 @@ Ryan:
 <<<<<<< HEAD
 
 =======
-- Calculating the number of unique users.
-- Calculating the number of booking when competitors has no available hotels or price is higher than competitors.
-- Calculating the number of bookings AND clicks by promotions.
+- The summer months (July and August) are not in the datasets of training and test set.
 
 (MORE ARE COMING)
 
