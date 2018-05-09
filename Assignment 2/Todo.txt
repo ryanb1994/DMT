@@ -32,7 +32,8 @@ Ryan:
   October:    0,      0,      0
   November:   13971,  22206,  496217
   December:   13371,  21221,  479739
-- 
+  
+- I am making more about the prices, stars and reviews with months.
 
 (MORE ARE COMING)
 
