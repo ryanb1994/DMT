@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
 
 
 import time
@@ -29,7 +28,7 @@ print df.head()
 #number of unique stuff
 print("Number of unique searches:"),len(df.srch_id.unique())
 print("Number of countries:"),len(df.prop_country_id.unique())
-
+print("Number of hotels:"),len(df.prop_id.unique())
 
 #an attempt to vizualize the difference in price between the price history of the client
 #and the price of a clicked property - can also be used for booked
@@ -47,6 +46,18 @@ diffStar = np.array(df.star_diff.loc[df['click_bool']==True])
 diffStar = diffStar[~np.isnan(diffStar)]
 plt.hist(diffStar, range = [0,5])
 plt.show()
+
+#see if promotion flag influences click/book
+totalClick = len(df.loc[df['click_bool']==True])
+promClick = len(df.loc[(df['click_bool']==True) & (df['promotion_flag'] == True)])
+print ("Total nr clicks/Promotion flag clicks"), totalClick, promClick
+
+totalBook = len(df.loc[df['booking_bool']==True])
+promBook = len(df.loc[(df['booking_bool']==True) & (df['promotion_flag'] == True)])
+print ("Total nr bookings/Promotion flag bookings"), totalBook, promBook
+
+totalProm = len(df.loc[df['promotion_flag']==True])
+print totalProm
 
 
 end = time.time()
