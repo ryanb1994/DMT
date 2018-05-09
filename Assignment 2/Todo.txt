@@ -17,6 +17,7 @@ Ryan:
 <<<<<<< HEAD
 
 =======
+- Wrote the business understanding with site below from the Chinese University.
 - The summer months (July and August) are not in the datasets of training and test set.
 
 (MORE ARE COMING)
