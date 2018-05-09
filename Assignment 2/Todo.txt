@@ -19,6 +19,20 @@ Ryan:
 =======
 - Wrote the business understanding with site below from the Chinese University.
 - The summer months (July and August) are not in the datasets of training and test set.
+- Number of bookings, clicks and searches in months:
+  January:    16011,  26596,  607578
+  February:   16473,  26332,  593893
+  March:      19426,  31368,  700876 
+  April:      17952,  28953,  642877
+  May:        20078,  31953,  699776 
+  June:       21108,  33250,  737391
+  July:       0,      0,      0
+  August:     0,      0,      0
+  September:  0,      0,      0
+  October:    0,      0,      0
+  November:   13971,  22206,  496217
+  December:   13371,  21221,  479739
+- 
 
 (MORE ARE COMING)
 
