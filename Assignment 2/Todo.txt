@@ -33,7 +33,7 @@ Ryan:
   November:   13971,  22206,  496217
   December:   13371,  21221,  479739
   
-- I am making more about the prices, stars and reviews with months.
+- I am making 3d plots about stars and reviews atm. There are missing values with reviews and I am replacing it with 0.
 
 (MORE ARE COMING)
 
