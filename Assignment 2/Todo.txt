@@ -45,7 +45,7 @@ Maria:
 -Total nr clicks/Promotion flag clicks: 221,879 / 64,469
 -Total nr bookings/Promotion flag bookings 138,390 / 41,947
 -Total nr promotion flags: 1,069,118
-
+ NEW: -comparison with competitors
 
 RELATED WORK
 ---------------------------------------------------------------
@@ -70,6 +70,8 @@ POSSIBLE FEATURES (Things that could be important for deciding)
 -Country where property is located
 -Children
 -Promotion flag
+
+NEW: a preliminary and basic comparison of feature importance
 
 jeffrey:
 https://github.com/gouravshenoy/ExpediaHotelRecommendation
