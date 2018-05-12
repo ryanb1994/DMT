@@ -71,6 +71,8 @@ POSSIBLE FEATURES (Things that could be important for deciding)
 -Children
 -Promotion flag
 
+jeffrey:
+https://github.com/gouravshenoy/ExpediaHotelRecommendation
 
 
 
