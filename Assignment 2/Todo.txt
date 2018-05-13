@@ -35,7 +35,13 @@ Ryan:
   
 - Made a 3d plot for star vs reviews with bookings. See the "stars_reviews_bookings.py".
 
-(MORE ARE COMING)
+NEW
+
+- Did write a part on overleaf about dates. That includes promotions tags, clicks, bookings etc.
+
+- I did write code about comparison in stars vs reviews. I will place that in overleaf on 13 may. Further I will check how influence the position of hotel could result bookings. That also will be written in overleaf.
+
+-----------------------------------------------------------------------------------------------------------------------------
 
 Maria:
 
