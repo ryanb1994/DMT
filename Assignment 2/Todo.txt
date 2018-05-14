@@ -53,6 +53,27 @@ Maria:
 -Total nr promotion flags: 1,069,118
  NEW: -comparison with competitors
 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Jeffrey:
+
+- Specifically srch_id, adults, children, room, saturday night etc don't have any effect on wether booked or not.
+Always around these results. When clicked and booked = 97% change, only clicked not booked = 3% chance, if not clicked never booked.
+Not really variables that seem to have a different effect.
+0             0               0.971611
+              1               0.028389
+1             0               1.000000
+
+
+
+
+
+
+
+
+
+
 RELATED WORK
 ---------------------------------------------------------------
 
