@@ -77,6 +77,11 @@ POSSIBLE FEATURES (Things that could be important for deciding)
 -Children
 -Promotion flag
 
+-Adult count
+-Site id : Some properties got more booked with different sites (Found one site focussed on children also)
+- Visitor location and distance: People book more close by
+
+
 NEW: a preliminary and basic comparison of feature importance
 
 jeffrey:
