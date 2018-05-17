@@ -39,8 +39,6 @@ Ryan:
 
 - I did write code about comparison in stars vs reviews. I will place that in overleaf on 13 may. Further I will check how influence the position of hotel could result bookings. That also will be written in overleaf.
 
-NEW:
-
 I have put all the composite features and transformations in one csv file (which I upload on github). I did do some classifier tests, but we have to deal with the next problem:
 
 year                             0
@@ -62,6 +60,10 @@ booking_bool                     0
 click_bool                       0
 
 The numbers are NAN. For now, I replace it with my classifiers with zero to go further with my part, but that is not the right choice if I check.
+
+NEW:
+
+Did write about classifiers in Overleaf, but the approach I used with classifiers was checking about clicking and booking. We now have to do the likelihood. See my classifiers as pdf in github.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
