@@ -41,7 +41,7 @@ Ryan:
 
 NEW:
 
-I have put all the composite features and transformations in one csv file (which I will send you the link from the dropbox). I did do some classifiers test, but we have to deal with the next problem:
+I have put all the composite features and transformations in one csv file (which I upload on github). I did do some classifier tests, but we have to deal with the next problem:
 
 year                             0
 month                            0
@@ -61,7 +61,7 @@ score_rank                       0
 booking_bool                     0
 click_bool                       0
 
-The numbers are NAN. For now, I replace it with my classifiers with zero to go further with my part, but that is not the right choice if I see.
+The numbers are NAN. For now, I replace it with my classifiers with zero to go further with my part, but that is not the right choice if I check.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
