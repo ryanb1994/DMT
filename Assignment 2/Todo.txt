@@ -35,11 +35,33 @@ Ryan:
   
 - Made a 3d plot for star vs reviews with bookings. See the "stars_reviews_bookings.py".
 
-NEW
-
 - Did write a part on overleaf about dates. That includes promotions tags, clicks, bookings etc.
 
 - I did write code about comparison in stars vs reviews. I will place that in overleaf on 13 may. Further I will check how influence the position of hotel could result bookings. That also will be written in overleaf.
+
+NEW:
+
+I have put all the composite features and transformations in one csv file (which I will send you the link from the dropbox). I did do some classifiers test, but we have to deal with the next problem:
+
+year                             0
+month                            0
+prop_score                       0
+prop_location_score1             0
+prop_location_score2             0
+diff_hist_price                  0
+usd_diff                      2256
+star_diff                     2256
+srch_query_affinity_score    18732
+orig_destination_distance      136
+prop_review_score                0
+position                         0
+price_rank                       0
+stars_rank                       0
+score_rank                       0
+booking_bool                     0
+click_bool                       0
+
+The numbers are NAN. For now, I replace it with my classifiers with zero to go further with my part, but that is not the right choice if I see.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
