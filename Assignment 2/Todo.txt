@@ -61,9 +61,11 @@ click_bool                       0
 
 The numbers are NAN. For now, I replace it with my classifiers with zero to go further with my part, but that is not the right choice if I check.
 
+Did write about classifiers in Overleaf, but the approach I used with classifiers was checking about clicking and booking. We now have to do the likelihood. See my classifiers as pdf in github.
+
 NEW:
 
-Did write about classifiers in Overleaf, but the approach I used with classifiers was checking about clicking and booking. We now have to do the likelihood. See my classifiers as pdf in github.
+Checked with theory if data is representative. See the notebook and overleaf.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
