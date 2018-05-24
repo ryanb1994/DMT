@@ -39,32 +39,62 @@ for k in range(0, len(df) - 1):
 
 ##########################################################################################
 
+
+
 # CALCULATING IDCG
 
+
+
 array_idcg = np.array([])
+
 t_idcg = np.array([])
+
 sum_idcg = 0
+
 # l = 0
 
+
+
 for k in range(0, len(df) - 1):
+
     if k != len(df) - 1:
+
         if(df['srch_id'][k] < df['srch_id'][k + 1]):
-            t_idcg = np.append(t_idcg, df['rank_rel'][k])
+
+            t_idcg = np.append(t_idcg, df['ndcg'][k])
+
             t_idcg = np.sort(t_idcg)[::-1]
-            for j in range(1, len(t_idcg) - 1):
-                sum_idcg += dcg(j, t_idcg[j - 1])
+
+            for j in range(0, len(t_idcg) - 1):
+
+                sum_idcg += dcg(j + 1, t_idcg[j])
+
             array_idcg = np.append(array_idcg, sum_idcg)
+
             sum_idcg = 0
+
             t_idcg = []
+
         else:
-            t_idcg = np.append(t_idcg, df['rank_rel'][k])
+
+            t_idcg = np.append(t_idcg, df['ndcg'][k])
+
             
+
     else:
-        t_idcg = np.append(t_idcg, df['rank_rel'][k])
-        t_idcg.sort()
-        for j in  range(len(t_idcg) - 1, -1, -1):
-            sum_idcg += dcg(j, t_idcg[j])
+
+        t_idcg = np.append(t_idcg, df['ndcg'][k])
+
+        t_idcg = np.sort(t_idcg)[::-1]
+
+        for j in range(1, len(t_idcg) - 1):
+
+            sum_idcg += dcg(j, t_idcg[j - 1])
+
         array_idcg = np.append(array_idcg, sum_idcg)
+
+
+
 
 
 ##########################################################################################
