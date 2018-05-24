@@ -69,6 +69,7 @@ Checked with theory if data is representative. See the notebook and overleaf.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+
 Maria:
 
 -Number of unique searches: 199,795
@@ -91,6 +92,8 @@ Not really variables that seem to have a different effect.
 0             0               0.971611
               1               0.028389
 1             0               1.000000
+
+
 
 
 
@@ -153,4 +156,33 @@ https://1drv.ms/u/s!AsWuoeNWUWZP7X_FAokenIAZaCGc
 Link to test file with preprocessing
 https://1drv.ms/u/s!AsWuoeNWUWZP7gA7WR9E4BcbkGma
 
+---------------------------------------------------
 
+df = df[['srch_id', 'position', 'booking_bool', 'click_bool', 'ndcg']]
+array_dcg = []
+array_idcg = np.empty(0)
+temp_idcg = []
+sum_dcg = 0
+sum_idcg = 0
+length_df = len(df)
+
+def dcg(i, rel):
+    return (2**rel - 1)/(np.log2(i + 1))
+
+def reverse_numeric(x, y):
+    return y - x
+
+for k in range(0, length_df - 1):
+    if k != length_df - 1:
+        if(df['srch_id'][k] < df['srch_id'][k + 1]):
+            # Last sum dcg is busy.
+            sum_dcg += dcg(df['position'][k],df['ndcg'][k])
+            array_dcg.append(sum_dcg)
+            sum_dcg = 0
+        else:
+            sum_dcg += dcg(df['position'][k],df['ndcg'][k])
+    else:
+        # Last sum dcg is busy.
+        sum_dcg += dcg(df['position'][k],df['ndcg'][k])
+        array_dcg.append(sum_dcg)
+        sum_dcg = 0
