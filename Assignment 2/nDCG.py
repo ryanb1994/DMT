@@ -61,7 +61,7 @@ for k in range(0, len(df) - 1):
 
         if(df['srch_id'][k] < df['srch_id'][k + 1]):
 
-            t_idcg = np.append(t_idcg, df['ndcg'][k])
+            t_idcg = np.append(t_idcg, df['rank_rel'][k])
 
             t_idcg = np.sort(t_idcg)[::-1]
 
@@ -77,13 +77,13 @@ for k in range(0, len(df) - 1):
 
         else:
 
-            t_idcg = np.append(t_idcg, df['ndcg'][k])
+            t_idcg = np.append(t_idcg, df['rank_rel'][k])
 
             
 
     else:
 
-        t_idcg = np.append(t_idcg, df['ndcg'][k])
+        t_idcg = np.append(t_idcg, df['rank_rel'][k])
 
         t_idcg = np.sort(t_idcg)[::-1]
 
