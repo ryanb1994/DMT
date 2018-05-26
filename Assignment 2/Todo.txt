@@ -162,3 +162,20 @@ https://www.overleaf.com/16432435qwfgsqwffshw
 Metrics:
 
 http://scikit-learn.org/stable/modules/model_evaluation.html
+
+
+Link to definite train file, test file and target file.
+
+Train: https://1drv.ms/u/s!AsWuoeNWUWZP70MHthiH033yn5zL
+target: https://1drv.ms/u/s!AsWuoeNWUWZP70LKnluWn7zJHTxj
+
+Test: https://1drv.ms/u/s!AsWuoeNWUWZP70R03Bry3m8VcfAI
+
+
+
+
+
+
+
+
+
