@@ -174,9 +174,12 @@ Test: https://1drv.ms/u/s!AsWuoeNWUWZP70R03Bry3m8VcfAI
 
 
 
+Link to MLP prediction over all the train data:
+https://1drv.ms/u/s!AsWuoeNWUWZP70iZ4M7tR9Tfirud
+Link to MLP prediction over all the test data:
+https://1drv.ms/u/s!AsWuoeNWUWZP70diYcIPzcBECFBj
 
-
-
+# Include srch_id, prop_id, position & rank_rel
 
 
 
